@@ -43,8 +43,8 @@ on mobile:
 
 ### Links
 
-- Solution URL: [On github](https://your-solution-url.com)
-- Live Site URL: [Live preview](https://your-live-site-url.com)
+- Solution URL: [On github](https://github.com/escannord/rest-countries-api-with-color-theme-switcher-master)
+- Live Site URL: [Live preview](https://rest-countries-api-with-color-theme-switcher-orpin-eight.vercel.app/)
 
 ## My process
 
