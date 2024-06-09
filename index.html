@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="assets/images/favicon-32x32.png"
+			type="image/x-icon"
+		/>
+		<title>rest countries api with color theme switcher</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body>
+		<header class="heading">
+			<h2 class="title">Where in the world?</h2>
+			<div class="toggler">
+				<span class="toggle-icon"><i class="fa-regular fa-moon"></i></span>
+				<span class="toggle">
+					<!-- <i class="fa-solid fa-moon"></i> -->
+					Dark Mode</span
+				>
+			</div>
+		</header>
+		<main class="main-container">
+			<div class="page page-list">
+				<div class="control-panel">
+					<div class="search-panel">
+						<label class="icon" for="search"
+							><i class="fa-solid fa-magnifying-glass"></i
+						></label>
+						<input
+							type="search"
+							name=""
+							placeholder="Search for a country..."
+							id="search"
+						/>
+					</div>
+					<div class="filter-panel">
+						<ul class="list-items hidden">
+							<li class="item" onclick="filter('Africa')">Africa</li>
+							<li class="item" onclick="filter('Asia')">Asia</li>
+							<li class="item" onclick="filter('America')">America</li>
+							<li class="item" onclick="filter('Europe')">Europe</li>
+							<li class="item" onclick="filter('Oceania')">Oceania</li>
+							<li class="item" onclick="filter('')">All</li>
+						</ul>
+						<label for=""
+							>Filter by <span class="filter-name">Region</span></label
+						>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+				</div>
+				<div class="card-container"></div>
+			</div>
+			<div class="page page-details">
+				<div class="back-container">
+					<button class="back-btn" onclick="back()">
+						<i class="fa-solid fa-arrow-left-long"></i> Back
+					</button>
+				</div>
+				<div class="details-country">
+					<div class="flag-container">
+						<img class="image-detail" src="https://flagcdn.com/af.svg" alt="" />
+					</div>
+					<div class="container-infos">
+						<h1 class="country-name">AFgagn</h1>
+						<div class="informations-country">
+							<div class="block-1">
+								<p class="infos-country">
+									<span class="text-infos">Native Name:</span>
+									<span class="value-infos info-native-name"></span>
+								</p>
+								<p class="infos-country">
+									<span class="text-infos">Population:</span>
+									<span class="value-infos info-population"></span>
+								</p>
+								<p class="infos-country">
+									<span class="text-infos">Region:</span>
+									<span class="value-infos info-region"></span>
+								</p>
+								<p class="infos-country">
+									<span class="text-infos">Sub Region:</span>
+									<span class="value-infos info-sub-region"></span>
+								</p>
+								<p class="infos-country">
+									<span class="text-infos">Capital:</span>
+									<span class="value-infos info-capital"></span>
+								</p>
+							</div>
+							<div class="block-2">
+								<p class="infos-country">
+									<span class="text-infos">Top Level Domain:</span>
+									<span class="value-infos info-top-level-domain"></span>
+								</p>
+								<p class="infos-country">
+									<span class="text-infos">Currencies:</span>
+									<span class="value-infos info-currencies"></span>
+								</p>
+								<p class="infos-country">
+									<span class="text-infos">Languages:</span>
+									<span class="value-infos info-languages"></span>
+								</p>
+							</div>
+						</div>
+						<div class="border-countries">
+							<span class="text-infos">Border countries:</span>
+							<div class="border-countries-list">
+								<span class="border-c"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="https://github.com/escannord">Arnold Nguechoung</a>.
+		</div>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
