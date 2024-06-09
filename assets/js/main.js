@@ -129,6 +129,9 @@ function showDetail(element) {
 	page_details
 		.querySelector(".image-detail")
 		.setAttribute("src", element.flags.svg);
+	 page_details
+		.querySelector(".image-detail")
+		.setAttribute("alt", element.name);
 	page_details.querySelector(".country-name").textContent =
 		element.name ?? "N/A";
 	page_details.querySelector(".info-native-name").textContent =
@@ -189,7 +192,7 @@ load_countries().then(function (data) {
 		country.className = "card";
 		country.innerHTML = template_card;
 		country.querySelector(".card-image").innerHTML =
-			'<img class="img-country" src="' + element.flags.png + '"/>';
+			'<img class="img-country" src="' + element.flags.png + '" alt="'+element.name+'"/>';
 		country.querySelector(".name-country").innerHTML = element.name;
 		country.querySelector(".info-population").innerHTML =
 			element.population.toLocaleString("en-US") ?? 0;
